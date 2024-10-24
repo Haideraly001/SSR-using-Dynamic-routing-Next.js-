@@ -6,6 +6,8 @@ const page = () => {
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
 
+  // post api in next.js
+
   const addUser = () => {
     const data = fetch("http://localhost:3000/api/hello", {
       method: "POST",
