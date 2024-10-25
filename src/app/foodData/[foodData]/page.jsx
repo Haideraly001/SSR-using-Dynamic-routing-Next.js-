@@ -8,6 +8,7 @@ export default async function foodDetails({ params }) {
   let data = await foodDataSet();
 
   const foodItem = data.find((item) => item.id.toString() === params.foodData);
+  // const fondItem = data.filter(item)
 
   return (
     <div>
